@@ -2,7 +2,7 @@ def get_worlds():
   return [
     {
       'name': 'Test world', # Name of the world
-      'region_files_directory': '/home/jotalanusse/Desktop/snapshot-small/BCC Server/region/', # Directory of the world region files to be scanned
+      'region_files_directory': '/home/jotalanusse/Desktop/minecraft/snapshot-small/BCC Server/region/', # Directory of the world region files to be scanned
       'scans': [
         {
           'name': '30 seconds rule', # Name of the scan
