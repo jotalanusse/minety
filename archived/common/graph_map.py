@@ -8,27 +8,7 @@ from os import path
 
 # Graph a world map based on a list of region scans
 def graph_map(region_scans, map_config): # By accepting the list of region scans instead of a list of chunks, we can do really interesting things
-  print('Graphing map with a total of [{0}] regions => [{1}] chunks'.format(len(region_scans), len(region_scans) * 1024))
-  
-  # # Get the configurations for the map
-  # map_scale_factor = map_config['scale_factor']
-  # map_file_name = map_config['file_name']
-  # map_output_directory = map_config['output_directory']
-  
-  # # Get the configurations for the colors
-  # color_configuration = map_config['colors'] # Get the colors configuration
-  # default_map_color = color_configuration['default']
-  
-  # # Get the configurations for the region colors
-  # region_color_configuration = color_configuration['regions'] # Get the region colors configuration
-  # inhabited_region_colormap = region_color_configuration['inhabited_colormap']
-  # non_inhabited_region_colormap = region_color_configuration['non_inhabited_colormap']
-  
-  # # Get the for the real time graph
-  # real_time_graph_configuration = map_config['real_time_graph'] # Get the real time graph configuration
-  # real_time_graph_enabled = real_time_graph_configuration['enabled']
-  # real_time_graph_max_size = real_time_graph_configuration['max_size']
-  # real_time_graph_update_interval = real_time_graph_configuration['update_interval']
+  print('Graphing map with a total of [{0}] regions => [~{1}] chunks'.format(len(region_scans), len(region_scans) * 1024))
   
   # Set the position variables as high/low as possible so the script can set the correct values when comparing with the real positions
   min_x_pos = 9999999999999
